@@ -1,0 +1,93 @@
+.loginPage {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #cdd6e0;
+  padding: 20px;
+}
+
+.loginCard {
+  width: 100%;
+  max-width: 430px;
+  background: white;
+  padding: 40px;
+  border-radius: 24px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  text-align: center;
+}
+
+.icon {
+  font-size: 45px;
+  margin-bottom: 10px;
+}
+
+.loginCard h1 {
+  margin-bottom: 10px;
+  color: #1976d2;
+  font-size: 28px;
+}
+
+.welcome {
+  font-size: 18px;
+  font-weight: 600;
+  color: #555;
+  margin-bottom: 5px;
+}
+
+.description {
+  color: #777;
+  margin-bottom: 30px;
+}
+
+.loginCard form {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+.loginCard label {
+  margin-bottom: 7px;
+  color: #555;
+  font-weight: 600;
+}
+
+.loginCard input {
+  padding: 13px;
+  margin-bottom: 18px;
+  border: 1px solid #939ad5;
+  border-radius: 10px;
+  font-size: 15px;
+  outline: none;
+}
+
+.loginCard input:focus {
+  border-color: #1976d2;
+}
+
+.loginCard button {
+  padding: 14px;
+  border: none;
+  border-radius: 10px;
+  background:#1976d2;
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  margin-top: 5px;
+}
+
+.loginCard button:hover {
+  background: #1976d2;
+}
+
+.registerText {
+  margin-top: 25px;
+  color: #666;
+}
+
+.registerText a {
+  color: #1976d2;
+  font-weight: 600;
+  text-decoration: none;
+}

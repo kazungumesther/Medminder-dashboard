@@ -1,0 +1,119 @@
+.layoutContainer {
+  display: flex;
+  min-height: 100vh;
+  background-color: #e7edf6;
+}
+
+.mainWrapper {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 40px;
+}
+
+.container {
+  background: #ffffff !important;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.05);
+  text-align: left;
+  width: 100%;
+  max-width: 800px;
+}
+
+.formHeader {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+.iconAnchor {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  background-color: #e6f0fa;
+  border-radius: 50%;
+  color: #1a73e8;
+  flex-shrink: 0;
+}
+
+.svgIcon {
+  width: 24px;
+  height: 24px;
+}
+
+.title {
+  font-size: 24px !important;
+  color: #111827;
+  margin: 0 0 4px 0 !important;
+  font-weight: 600;
+}
+
+.subtitle {
+  font-size: 14px;
+  color: #6b7280;
+  margin: 0;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 24px; 
+}
+
+.formLabel {
+  font-size: 14px;
+  font-weight: 600;
+  color: #374151;
+  margin-bottom: -16px; 
+}
+
+.formInput {
+  width: 100%;
+  padding: 14px 16px !important; 
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  font-size: 16px;
+  color: #111827;
+  background-color: #ffffff;
+  box-sizing: border-box;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.formInput:focus {
+  outline: none;
+  border-color: #2563eb;
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.15);
+}
+
+.submitBtn {
+  width: 100%;
+  padding: 14px !important;
+  background-color: #2563eb;
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: background-color 0.2s;
+}
+
+.submitBtn:hover {
+  background-color: #1e40af;
+}
+
+.loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  font-size: 1.1rem;
+  color: #64748b;
+  background-color: #f8fafc;
+}

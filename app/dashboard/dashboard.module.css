@@ -1,0 +1,214 @@
+.pageWrapper {
+  display: flex;
+  min-height: 100vh;
+  background-color: #e7edf6;
+}
+
+.mainContent {
+  flex: 1;
+  display: flex;
+  justify-content: flex-start; 
+  padding: 3.5rem 3rem 3.5rem 10rem;      
+  overflow-y: auto;
+  height: 100vh;
+}
+
+.contentContainer {
+  width: 100%;
+  max-width: 1200px; 
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 2.5rem;
+}
+
+.header h1 {
+  font-size: 1.3rem; 
+  color: #1e293b;
+  font-weight: 800;
+  margin: 0;
+  letter-spacing: -0.025em;
+}
+
+.subtitle {
+  font-size: 1.1rem; 
+  color: #64748b;
+  margin: 0.4rem 0 0 0;
+  font-weight: 500;
+}
+
+.medicationGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+  gap: 1.75rem;
+}
+
+.medicationCard {
+  background: #ffffff;
+  border-radius: 12px;
+  border: 1px solid #e2e8f0;
+  padding: 1.5rem;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.02);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.cardHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 1.25rem;
+}
+
+.medInfo {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.iconWrapper {
+  background-color: #ef444412; 
+  color: #ef4444;            
+  padding: 0.6rem;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justifyContent: center;
+}
+
+.vectorIcon {
+  transform: rotate(-45deg); 
+}
+
+.medInfo h3 {
+  font-size: 1rem;
+  color: #0f172a;
+  margin: 0;
+  font-weight: 600;
+}
+
+.dosageText {
+  font-size: 0.875rem;
+  color: #64748b;
+  margin: 0.15rem 0 0 0;
+}
+
+.deleteBtn {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 1.1rem;
+  padding: 0.25rem;
+  border-radius: 4px;
+  transition: background-color 0.2s;
+}
+
+.deleteBtn:hover {
+  background-color: #fee2e2;
+  color: #ef4444 !important;
+}
+
+.cardBody {
+  border-top: 1px dashed #e2e8f0;
+  border-bottom: 1px dashed #e2e8f0;
+  padding: 1rem 0;
+  margin-bottom: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.metaRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.875rem;
+}
+
+.labelContainer {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.metaIcon {
+  color: #94a3b8; 
+}
+
+.metaLabel {
+  color: #64748b;
+}
+
+.metaValue {
+  font-weight: 500;
+  color: #334155;
+}
+
+.takeBtn {
+  width: 100%;
+  padding: 0.75rem;
+  background-color: #1e70d6;
+  color: #ffffff;
+  border: none;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.takeBtn:hover {
+  background-color: #175aa6;
+}
+
+.emptyState {
+  grid-column: 1 / -1;
+  background: #ffffff;
+  padding: 5.5rem 3rem; 
+  border-radius: 16px;
+  text-align: center;
+  border: 2px dashed #cbd5e1;
+  color: #64748b;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.01);
+}
+
+.emptyState h3 {
+  color: #1e293b;
+  font-size: 1.2rem;
+  margin: 0 0 0.6rem 0;
+  font-weight: 700;
+}
+
+.emptyState p {
+  margin: 0;
+  font-size: 1.1rem;
+  color: #64748b;
+}
+
+.loadingContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-size: 1.25rem;
+  color: #64748b;
+  width: 100%;
+}
+
+.contentContainer [class*="value"],
+.contentContainer [class*="number"],
+.contentContainer section:first-of-type h2 {
+  font-size: 1.75rem !important;
+}
+
+.contentContainer section h2 {
+  font-size: 1.3rem !important;
+  font-weight: 700;
+  color: #1e293b;
+}

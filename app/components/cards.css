@@ -1,0 +1,57 @@
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  margin-top: 25px;
+  width: 100%;
+}
+
+.card {
+  background: white;
+  border: 1px solid #d6e8ff;
+  border-radius: 15px;
+
+  padding: 36px 24px;
+
+  width: 100%;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.02);
+  display: flex;
+  flex-direction: column;
+}
+
+.cardHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.card h3 {
+  color: #1976d2;
+  margin: 0;
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+
+.card h2 {
+  color: #333;
+  margin: 12px 0;
+  font-size: 2.85rem;
+  font-weight: 800;
+  line-height: 1;
+}
+
+.card p {
+  color: #777;
+  margin: 0;
+  font-size: 1.05rem;
+  font-weight: 500;
+}
+
+.successText {
+  color: #10b981 !important;
+}
+
+.warningText {
+  color: #f59e0b !important;
+}

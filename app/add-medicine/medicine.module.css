@@ -1,0 +1,139 @@
+.pageWrapper {
+  display: flex;
+  min-height: 100vh;
+  background-color: #e7edf4; 
+}
+
+.mainContent {
+  flex: 1;
+  display: flex;
+  align-items: flex-start; 
+  justify-content: center;
+  padding: 3.5rem 2rem 2rem 2rem; 
+}
+
+.formContainer {
+  background: #ffffff;
+  border-radius: 12px; 
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.03); 
+  width: 100%;
+  max-width: 740px; 
+  padding: 2.5rem;
+  border: 1px solid #f1f5f9;
+}
+
+.formHeader {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+  margin-bottom: 2rem;
+}
+
+.iconWrapper {
+  background: #eff6ff;
+  color: #2563eb;
+  padding: 0.85rem;
+  border-radius: 50%; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.formTitle {
+  font-size: 1.45rem;
+  color: #1e293b;
+  margin: 0;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+.formSubtitle {
+  font-size: 0.875rem;
+  color: #94a3b8;
+  margin: 0.2rem 0 0 0;
+}
+
+.medicationForm {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.inputGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.inputGroup label {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: #475569;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+
+.inputGroup label svg {
+  display: none; 
+}
+
+.inputGroup input,
+.inputGroup select {
+  width: 100%;
+  padding: 0.85rem 1rem; 
+  border: 1px solid #e2e8f0;
+  border-radius: 6px; 
+  font-size: 0.95rem;
+  color: #334155;
+  background-color: #ffffff;
+  transition: all 0.2s ease;
+}
+
+.inputGroup input::placeholder {
+  color: #94a3b8;
+}
+
+.inputGroup input:focus,
+.inputGroup select:focus {
+  outline: none;
+  border-color: #2563eb;
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.08);
+}
+
+.submitBtn {
+  width: 100%;
+  padding: 0.85rem;
+  background: #1d4ed8; 
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  cursor: pointer;
+  margin-top: 0.5rem;
+  transition: background 0.15s ease;
+}
+
+.submitBtn:hover {
+  background: #1e40af;
+}
+
+.chipButton {
+  padding: 8px 16px;
+  font-size: 12px;
+  font-weight: bold;
+  border-radius: 20px;
+  cursor: pointer;
+  border: 1px solid #cbd5e1;
+  background-color: #ffffff;
+  color: #64748b;
+  transition: all 0.15s ease;
+}
+
+.chipButtonActive {
+  border: 1.5px solid #2563eb !important;
+  background-color: #eff6ff !important;
+  color: #2563eb !important;
+}

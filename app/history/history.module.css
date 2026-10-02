@@ -1,0 +1,130 @@
+.layoutContainer {
+  display: flex;
+  min-height: 100vh;
+  width: 100vw;
+  margin: 0 !important;
+  padding: 0 !important;
+  background-color: #e7edf6;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.mainWrapper {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  padding: 3rem 2rem;
+  overflow-y: auto;
+  min-height: 100vh;
+}
+
+.contentContainer {
+  width: 100%;
+  max-width: 850px;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 2.5rem;
+}
+
+.header h1 {
+  font-size: 1.3rem;
+  color: #1e293b;
+  font-weight: 700;
+  margin: 0;
+}
+
+.subtitle {
+  font-size: 0.95rem;
+  color: #64748b;
+  margin: 0.25rem 0 0 0;
+}
+
+.timeline {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.historyCard {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #ffffff;
+  padding: 1.5rem 1.75rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.02), 0 2px 4px -1px rgba(0, 0, 0, 0.01);
+  border: 1px solid #e2e8f0;
+}
+
+.cardLeft {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+}
+
+.medDetails {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.medDetails h3 {
+  font-size: 1.2rem;
+  color: #0f172a;
+  margin: 0;
+  font-weight: 600;
+}
+
+.medDetails p {
+  font-size: 0.95rem;
+  color: #475569;
+  margin: 0;
+  line-height: 1.4;
+}
+
+.cardRight {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.timestampBox {
+  display: flex;
+  flex-direction: column;
+  text-align: right;
+}
+
+.timeLabel {
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: #64748b;
+}
+
+.statusBadge {
+  background-color: #f0fdf4;
+  color: #16a34a;
+  padding: 0.4rem 0.8rem;
+  border-radius: 9999px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  border: 1px solid #bbf7d0;
+}
+
+.emptyState {
+  background: #ffffff;
+  padding: 4rem 2rem;
+  border-radius: 12px;
+  text-align: center;
+  border: 2px dashed #cbd5e1;
+  color: #64748b;
+}
+
+.emptyState p {
+  margin: 0;
+  font-size: 0.95rem;
+}
