@@ -1,36 +1,61 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+#  MedMinder Dashboard
 
-## Getting Started
+MedMinder is a responsive, user-friendly healthcare application designed to help patients manage and track their daily medication schedules seamlessly. The application features a clean, professional dashboard panel leveraging Next.js React patterns and Lucide icons to maximize daily compliance.
 
-First, run the development server:
+##  Core Features
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+*   ** Dynamic Medical Analytics**: A horizontal, flex-box metric row highlighting total medications added, active intake completed, and remaining items due for the day.
+*   ** Schedule Overview**: Clear timeline breakdowns mapping custom frequency schedules and explicit timing metrics.
+*   ** Real-Time Logging**: Functional client-side interaction toggles enabling instant intake completion timestamps.
+*   ** Persistent Synchronization**: Auto-restoration workflows connected directly with local browser memory contexts and baseline background data handlers.
+*   ** Safe Records Administration**: Intuitive validation modals safeguarding against unintended data removal records.
+
+##  Architecture & Tech Stack
+
+*   **Framework:** Next.js (App Router, Client Component Paradigms)
+*   **State & Sync Management:** React Context API (`AppContext`) & `localStorage`
+*   **Visual Assets:** Lucide React Icon Sets (`Pill`, `CheckCircle2`, `Clock`, `RefreshCw`, `Trash2`)
+*   **Styling Engine:** CSS Modules (`dashboard.module.css`) supplemented by isolated, inline Flexbox rows for rigid aspect ratio formatting.
+
+##  Repository Directory Structure
+
+```text
+├── app/
+│   ├── components/
+│   │   ├── Cards.jsx         # Flex-aligned visual analytic metric cards
+│   │   └── Sidebar.jsx       # Icon-driven core application navigation
+│   ├── dashboard/
+│   │   ├── page.jsx          # Primary workspace timeline and scheduling view
+│   │   └── dashboard.module.css
+│   ├── login/
+│   │   └── page.jsx          # Authentication viewport utilizing singular vector icons
+│   └── register/
+│       └── page.jsx          # Onboarding portal
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+##  Local Installation & Setup
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+1. **Clone the project repository:**
+   ```bash
+   git clone https://github.com
+   cd medminder
+   ```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+2. **Install the necessary environment dependencies:**
+   ```bash
+   npm install lucide-react
+   # or if using yarn / pnpm
+   yarn install
+   ```
 
-## Learn More
+3. **Configure Environment Parameters:**
+   Create a standard `.env.local` file inside your core root folder directory:
+   ```env
+   NEXT_PUBLIC_BACKEND_URL=http://localhost:5000
+   ```
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+4. **Launch the local execution runtime environment:**
+   ```bash
+   npm run dev
+   ```
+   Open **`http://localhost:3000`** in your local browser window panel to view your functional health dashboard.
